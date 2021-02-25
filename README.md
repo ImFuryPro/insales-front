@@ -6,3 +6,6 @@
     - Измените URL к магазину в actionForm
     - ...
     - Profit!
+
+## Source
+Скрипт использует разработанный php скрипт от InSales - https://github.com/insales/insales_php_api
