@@ -9,9 +9,9 @@
     require_once 'vendor/autoload.php';
 
     // Settings 
-    $identity = '570fa0aa4417f7a12ded9bf291403113';
-    $password = 'ab496e50523dd99c42de2c0b03e00aa9';
-    $host_name = 'myshop-bkg431.myinsales.ru';
+    $identity = 'identity';
+    $password = 'password';
+    $host_name = 'host_name';
 
     $client = new \InSales\API\ApiClient($identity, $password, $host_name);
 ?>
@@ -70,7 +70,7 @@
         <script>
             let localCart    = [],                                // Set Local Cart For Added Product in Page
                 cartCount    = 0,                                 // Set Total Counter Product Cart
-                actionForm   = 'http://just-team.ru/cart_items',  // Set Action URL to InSales Shop
+                actionForm   = 'http://example.com/cart_items',   // Set Action URL to InSales Shop
                 putInOrder   = document.querySelector('#putInOrder'),
                 countCardDOM = document.querySelector('#count-products-cart');
 
