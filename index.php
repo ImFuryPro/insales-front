@@ -31,7 +31,7 @@
                 </div>
                 Количество продуктов в магазине: 
                 <span id="count-products">
-                    <?= count($client->getProducts()->getData()) ?>
+                    <?= $client->getProductsCount()->getData()['count'] ?>
                 </span>
             </div>
             <div class="product-count__block" id="putInOrder">
@@ -44,7 +44,7 @@
         
         <div class="product-list" id="product-list">
             <?php 
-                foreach ($client->getProducts()->getData() as $key => $product) {
+                foreach ($client->getProducts(['per_page' => 12, 'updated_since' => '2021-02-26 10:44:43 +0300'])->getData() as $key => $product) {
             ?>
                 <div class="product-item">
                     <div class="product-item__image">

@@ -39,6 +39,11 @@ p {
 }
 .product-item__image {
     margin-bottom: 15px;
+    width: 309px;
+    height: 309px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 .product-item__image img {
     width: 100%;
